@@ -25,7 +25,6 @@ class PlaceFunctions {
                 completion()
             }
         }
-
     }
     
     static func updatePlace(placeModel: PlaceModel) {

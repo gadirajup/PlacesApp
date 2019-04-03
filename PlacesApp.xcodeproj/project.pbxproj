@@ -23,6 +23,10 @@
 		A471E07F22553C1300AA30B0 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471E07E22553C1300AA30B0 /* PlaceModel.swift */; };
 		A471E08122553CCC00AA30B0 /* PlaceFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471E08022553CCC00AA30B0 /* PlaceFunctions.swift */; };
 		A471E08322553D3F00AA30B0 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471E08222553D3F00AA30B0 /* Data.swift */; };
+		A471E08722553EEB00AA30B0 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471E08622553EEB00AA30B0 /* PlacesViewController.swift */; };
+		A471E08922553F0000AA30B0 /* PlacesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A471E08822553F0000AA30B0 /* PlacesViewController.storyboard */; };
+		A471E08B2255425200AA30B0 /* PlacesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471E08A2255425200AA30B0 /* PlacesTableViewCell.swift */; };
+		A471E08E225544CF00AA30B0 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471E08D225544CF00AA30B0 /* UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +48,10 @@
 		A471E07E22553C1300AA30B0 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		A471E08022553CCC00AA30B0 /* PlaceFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceFunctions.swift; sourceTree = "<group>"; };
 		A471E08222553D3F00AA30B0 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		A471E08622553EEB00AA30B0 /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
+		A471E08822553F0000AA30B0 /* PlacesViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlacesViewController.storyboard; sourceTree = "<group>"; };
+		A471E08A2255425200AA30B0 /* PlacesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableViewCell.swift; sourceTree = "<group>"; };
+		A471E08D225544CF00AA30B0 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,12 +84,13 @@
 		A471E0532255339400AA30B0 /* PlacesApp */ = {
 			isa = PBXGroup;
 			children = (
-				A471E07C22553BF300AA30B0 /* Model */,
+				A471E07C22553BF300AA30B0 /* Models */,
+				A471E08422553EAF00AA30B0 /* Views */,
 				A471E06822553A5300AA30B0 /* Resources */,
 				A471E0542255339400AA30B0 /* AppDelegate.swift */,
-				A471E05B2255339400AA30B0 /* Assets.xcassets */,
 				A471E05D2255339400AA30B0 /* LaunchScreen.storyboard */,
 				A471E0602255339400AA30B0 /* Info.plist */,
+				A471E05B2255339400AA30B0 /* Assets.xcassets */,
 			);
 			path = PlacesApp;
 			sourceTree = "<group>";
@@ -89,6 +98,7 @@
 		A471E06822553A5300AA30B0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A471E08C225544C200AA30B0 /* Extensions */,
 				A471E0662255392A00AA30B0 /* Theme.swift */,
 				A471E06922553A7600AA30B0 /* Fonts */,
 			);
@@ -111,13 +121,13 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		A471E07C22553BF300AA30B0 /* Model */ = {
+		A471E07C22553BF300AA30B0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				A471E08222553D3F00AA30B0 /* Data.swift */,
 				A471E07D22553BFE00AA30B0 /* Place */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		A471E07D22553BFE00AA30B0 /* Place */ = {
@@ -127,6 +137,32 @@
 				A471E08022553CCC00AA30B0 /* PlaceFunctions.swift */,
 			);
 			path = Place;
+			sourceTree = "<group>";
+		};
+		A471E08422553EAF00AA30B0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A471E08522553ED600AA30B0 /* PlacesViewController */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A471E08522553ED600AA30B0 /* PlacesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A471E08622553EEB00AA30B0 /* PlacesViewController.swift */,
+				A471E08822553F0000AA30B0 /* PlacesViewController.storyboard */,
+				A471E08A2255425200AA30B0 /* PlacesTableViewCell.swift */,
+			);
+			path = PlacesViewController;
+			sourceTree = "<group>";
+		};
+		A471E08C225544C200AA30B0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A471E08D225544CF00AA30B0 /* UIView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +232,7 @@
 				A471E07722553ABF00AA30B0 /* Montserrat-Bold.ttf in Resources */,
 				A471E07922553ABF00AA30B0 /* Montserrat-ExtraBold.ttf in Resources */,
 				A471E07822553ABF00AA30B0 /* Montserrat-SemiBold.ttf in Resources */,
+				A471E08922553F0000AA30B0 /* PlacesViewController.storyboard in Resources */,
 				A471E07522553ABF00AA30B0 /* Montserrat-Thin.ttf in Resources */,
 				A471E06B22553A8800AA30B0 /* BalooChettan-Regular.ttf in Resources */,
 			);
@@ -208,7 +245,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A471E08E225544CF00AA30B0 /* UIView.swift in Sources */,
+				A471E08722553EEB00AA30B0 /* PlacesViewController.swift in Sources */,
 				A471E0672255392A00AA30B0 /* Theme.swift in Sources */,
+				A471E08B2255425200AA30B0 /* PlacesTableViewCell.swift in Sources */,
 				A471E08322553D3F00AA30B0 /* Data.swift in Sources */,
 				A471E08122553CCC00AA30B0 /* PlaceFunctions.swift in Sources */,
 				A471E07F22553C1300AA30B0 /* PlaceModel.swift in Sources */,
