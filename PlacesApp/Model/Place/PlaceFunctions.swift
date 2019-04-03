@@ -13,12 +13,19 @@ class PlaceFunctions {
         
     }
     
-    static func readPlaces() {
-        if Data.placeModels.count == 0 {
-            Data.placeModels.append(PlaceModel(title: "Ukraine"))
-            Data.placeModels.append(PlaceModel(title: "Bali"))
-            Data.placeModels.append(PlaceModel(title: "Japan"))
+    static func readPlaces(completion: @escaping () -> ()) {
+        DispatchQueue.global(qos: .userInteractive).async {
+            if Data.placeModels.count == 0 {
+                Data.placeModels.append(PlaceModel(title: "Ukraine"))
+                Data.placeModels.append(PlaceModel(title: "Bali"))
+                Data.placeModels.append(PlaceModel(title: "Japan"))
+            }
+            
+            DispatchQueue.main.async {
+                completion()
+            }
         }
+
     }
     
     static func updatePlace(placeModel: PlaceModel) {
