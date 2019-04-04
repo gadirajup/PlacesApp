@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A458340C225570F2005E4780 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A458340B225570F2005E4780 /* UIButton.swift */; };
+		A458341422558266005E4780 /* AddPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A458341322558266005E4780 /* AddPlacesViewController.swift */; };
+		A458341622558302005E4780 /* AddPlacesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A458341522558302005E4780 /* AddPlacesViewController.storyboard */; };
 		A471E0552255339400AA30B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471E0542255339400AA30B0 /* AppDelegate.swift */; };
 		A471E05C2255339400AA30B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A471E05B2255339400AA30B0 /* Assets.xcassets */; };
 		A471E05F2255339400AA30B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A471E05D2255339400AA30B0 /* LaunchScreen.storyboard */; };
@@ -30,6 +33,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A458340B225570F2005E4780 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		A458341322558266005E4780 /* AddPlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlacesViewController.swift; sourceTree = "<group>"; };
+		A458341522558302005E4780 /* AddPlacesViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddPlacesViewController.storyboard; sourceTree = "<group>"; };
 		A471E0512255339400AA30B0 /* PlacesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlacesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A471E0542255339400AA30B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A471E05B2255339400AA30B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,6 +71,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A458340D22557206005E4780 /* Custom Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Custom Classes";
+			sourceTree = "<group>";
+		};
+		A4583412225581A9005E4780 /* AddPlacesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A458341522558302005E4780 /* AddPlacesViewController.storyboard */,
+				A458341322558266005E4780 /* AddPlacesViewController.swift */,
+			);
+			path = AddPlacesViewController;
+			sourceTree = "<group>";
+		};
 		A471E0482255339400AA30B0 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +120,7 @@
 		A471E06822553A5300AA30B0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A458340D22557206005E4780 /* Custom Classes */,
 				A471E08C225544C200AA30B0 /* Extensions */,
 				A471E0662255392A00AA30B0 /* Theme.swift */,
 				A471E06922553A7600AA30B0 /* Fonts */,
@@ -142,6 +165,7 @@
 		A471E08422553EAF00AA30B0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A4583412225581A9005E4780 /* AddPlacesViewController */,
 				A471E08522553ED600AA30B0 /* PlacesViewController */,
 			);
 			path = Views;
@@ -161,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				A471E08D225544CF00AA30B0 /* UIView.swift */,
+				A458340B225570F2005E4780 /* UIButton.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -224,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A471E07422553ABF00AA30B0 /* Montserrat-Light.ttf in Resources */,
+				A458341622558302005E4780 /* AddPlacesViewController.storyboard in Resources */,
 				A471E07B22553ABF00AA30B0 /* Montserrat-ExtraLight.ttf in Resources */,
 				A471E07A22553ABF00AA30B0 /* Montserrat-Regular.ttf in Resources */,
 				A471E05F2255339400AA30B0 /* LaunchScreen.storyboard in Resources */,
@@ -245,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A458341422558266005E4780 /* AddPlacesViewController.swift in Sources */,
 				A471E08E225544CF00AA30B0 /* UIView.swift in Sources */,
 				A471E08722553EEB00AA30B0 /* PlacesViewController.swift in Sources */,
 				A471E0672255392A00AA30B0 /* Theme.swift in Sources */,
@@ -253,6 +280,7 @@
 				A471E08122553CCC00AA30B0 /* PlaceFunctions.swift in Sources */,
 				A471E07F22553C1300AA30B0 /* PlaceModel.swift in Sources */,
 				A471E0552255339400AA30B0 /* AppDelegate.swift in Sources */,
+				A458340C225570F2005E4780 /* UIButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

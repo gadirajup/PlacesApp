@@ -11,20 +11,36 @@ import UIKit
 class PlacesViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var addButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
+        fetchData()
+        setupTableView()
+        setupAddButton()
+    }
+    
+    fileprivate func fetchData() {
         PlaceFunctions.readPlaces { [weak self] in
             self?.tableView.reloadData()
         }
-        
-        setupTableView()
     }
     
     fileprivate func setupTableView() {
         tableView.dataSource = self
         tableView.delegate = self
+    }
+    
+    fileprivate func setupAddButton() {
+        addButton.createFAB()
+        
+        addButton.backgroundColor = Theme.theme.accentColor
+        view.addSubview(addButton)
+    }
+    @IBAction func addButtonTapped(_ sender: Any) {
+//        let addPlacesViewController = AddPlacesViewController()
+//        present(addPlacesViewController, animated: true, completion: nil)
     }
 }
 
@@ -41,6 +57,6 @@ extension PlacesViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 160
+        return 140
     }
 }
